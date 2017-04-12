@@ -1,6 +1,6 @@
 # Estruturas e Tags Básicas do HTML5
 
-O HTML5 é a nova versão padrão do HTML com novas Tags e APIs capazes de inserir facilmente um arquivo de audio ou vídeo em um site.
+O HTML5 é a nova versão padrão do HTML com novas Tags e APIs capazes de inserir facilmente um arquivo de audio ou vídeo em um site. Basicamente o HTML seria o esqueleto do seu site, que deverá ser formatado (ou vestido) utilizando a linguagem CSS (Cascading Style Sheet).
 
 ## Estrutura Básica
 
@@ -27,13 +27,19 @@ Enquanto o XHTML 1.0 trazia mais informações, o DOCTYPE do HTML5 é mais simpl
 
 A tag html define o início da sua página, nela podemos adicionar o *lang* definindo a linguagem (português, inglês, espanhol, etc) da página. Este atributo ajuda aos leitores de tela a ler corretamente os textos contidos na página, além dos buscadores poderem identificar o idioma e para que o navegador possa utilizar o dicionário gramatical mais correto.
 
-No *head* ficarão informações conhecidas como *metadados*, que normalmente so globais, não aparecem na página, mas podem efetuar modificações na mesma. Aqui adicionamos o *title* para definir o título da página e mas *metas* *viewport*, *charset*, *description*, *keywords*, *cards* para as rede sociais, links de arquivos *css* e *javascript*.
-
-Por fim, no *body* ficarão as *tags* e informações que serão mostradas ao seu usuário, interpretada pelo navegador.
-
 ## Conteúdo do HEAD
 
+No *head* ficarão informações conhecidas como *metadados*, que normalmente so globais, não aparecem na página, mas podem efetuar modificações na mesma. Aqui adicionamos o *title* para definir o título da página e mas *metas* *viewport*, *charset*, *description*, *keywords*, *cards* para as rede sociais, links de arquivos *css* e *javascript*.
+
+### Meta Tags
+
+As metas ajudam o seu site a descrever seu conteúdo aos buscadores, como o Google. Aqui você poderá dizer qual a codificação (charset), descrição e até palavras-chaves referentes a sua página. 
+
+Essas são importantes justamente por identificar o site aos buscadores, ajudando no SEO (Search Engine Optimization). O Google não utiliza somente as metas para realizar suas buscas, mas elas são uma parte importante.
+
 ## Conteúdo do BODY
+
+Por fim, no *body* ficarão as *tags* e informações que serão mostradas ao seu usuário, interpretada pelo navegador.
 
 ## Tags HTML e seus Significados
 
