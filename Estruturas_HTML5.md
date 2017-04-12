@@ -22,7 +22,7 @@ O DOCTYPE define qual tipo de arquivo você está escrevendo, ela é responsáve
 Enquanto o XHTML 1.0 trazia mais informações, o DOCTYPE do HTML5 é mais simples. Segue abaixo exemplo do DOCTYPE do XHTML:
 
 ```
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">´´´
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 ```
 
 A tag html define o início da sua página, nela podemos adicionar o *lang* definindo a linguagem (português, inglês, espanhol, etc) da página. Este atributo ajuda aos leitores de tela a ler corretamente os textos contidos na página, além dos buscadores poderem identificar o idioma e para que o navegador possa utilizar o dicionário gramatical mais correto.
@@ -31,11 +31,33 @@ A tag html define o início da sua página, nela podemos adicionar o *lang* defi
 
 No *head* ficarão informações conhecidas como *metadados*, que normalmente so globais, não aparecem na página, mas podem efetuar modificações na mesma. Aqui adicionamos o *title* para definir o título da página e mas *metas* *viewport*, *charset*, *description*, *keywords*, *cards* para as rede sociais, links de arquivos *css* e *javascript*.
 
+Dentro do head um dos comandos mais importantes é o **title**. Ele define o título da página e ajuda os buscadores, influenciando o Google por exemplo, a mostrar os contedos mais relevantes. O ideal é que o title tenha até 65 caracteres e que cada página dentro do seu site tenha uma diferente, identificando em qual página do site a pessoa está.
+
 ### Meta Tags
 
 As metas ajudam o seu site a descrever seu conteúdo aos buscadores, como o Google. Aqui você poderá dizer qual a codificação (charset), descrição e até palavras-chaves referentes a sua página. 
 
 Essas são importantes justamente por identificar o site aos buscadores, ajudando no SEO (Search Engine Optimization). O Google não utiliza somente as metas para realizar suas buscas, mas elas são uma parte importante.
+
+Abaixo lista tas metas mais importantes:
+
+- **description**: guarda a descrição do site, utilizado nos motores de busca. 
+- **keywords**: palavras chaves relacionadas ao site, utilizada nos primórdios pelos motores de busca.
+- **author**: idenfitica o autor do site
+- **robots**: ajuda os robos dos motores de busca a indexar ou não um site. Com esta opção podemos dizer se uma determinada página do site não deve ser mostrada nos resultados de uma busca.
+
+Exemplo de utilização:
+
+```
+<head>
+  <title>Página do Burnes - Home</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Página do Burnes sobre HTML e CSS">
+  <meta name="keywords" content="html, css, js, site">
+  <meta name="robots" content="index">
+</head>
+```
+
 
 ## Conteúdo do BODY
 
@@ -68,5 +90,25 @@ Por fim, no *body* ficarão as *tags* e informações que serão mostradas ao se
 - **a:** define um link que deve ser apontado com o atributo *href*
 - **img:** define a utilização de uma imagem (JPG, GIF, PNG e outras). A imagem deve ser apontada com o uso do atributo *src*
 - **strong:** apesar de deixar em negrito, representa a importância deste texto no meio da frase
+
+### Exemplo de Utilização
+
+```
+<body>
+  <header>
+    <h1>Página do Burnes</h1>
+  </header>
+  <nav>
+    <a href="index.html" title="Home">Home</a>
+  </nav>
+  <main>
+    <h1>Olá! Bem vindo a minha Pagina!</h1>
+  </main>
+  <footer>
+    <p>Desenvolvido por Burnes</p>
+  </footer>
+</body>
+
+```
 
 Para conhecer mais elementos HTML5, confira a lista no link [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5/HTML5_element_list "HTML Element List")
